@@ -215,13 +215,9 @@ Window {
                 x: 30
                 y: 20
 
-                MouseArea {
-                    onClicked: {
-                        btnHandler.togglePlayList();
-                    }
+                onClicked: {
+                    btnHandler.togglePlayList();
                 }
-
-
 
                 background: Rectangle {
                     color: "transparent"
