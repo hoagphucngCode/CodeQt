@@ -215,9 +215,13 @@ Window {
                 x: 30
                 y: 20
 
-                onClicked: {
-                    btnHandler.togglePlayList();
+                MouseArea {
+                    onClicked: {
+                        btnHandler.togglePlayList();
+                    }
                 }
+
+
 
                 background: Rectangle {
                     color: "transparent"
@@ -347,7 +351,7 @@ Window {
             const j = Math.floor(Math.random() * (i + 1));
             const tempTitle = array.get(i).title;
             array.set(i, { title: array.get(j).title });
-            array.set(j, {title: tempTitle})
+            array.set(j, { title: tempTitle })
         }
     }
 
