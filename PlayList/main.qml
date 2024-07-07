@@ -215,8 +215,10 @@ Window {
                 x: 30
                 y: 20
 
-                onClicked: {
-                    btnHandler.togglePlayList();
+                MouseArea {
+                    onClicked: {
+                        btnHandler.togglePlayList();
+                    }
                 }
 
                 background: Rectangle {

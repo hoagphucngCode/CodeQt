@@ -112,3 +112,14 @@
 524	840	7420293831589068	CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp.obj	699024e90e057323
 520	2980	7420293831543536	CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_main_qml.cpp.obj	dfe67c9af82c3a9f
 2980	3436	7420293856144213	appPlayList.exe	e80892e16e41e493
+49	115	7420323389627206	PlayList/main.qml	edf7ec000f94437
+49	115	7420323389627206	F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml	edf7ec000f94437
+57	262	7420323391087923	.qt/qml_imports/appPlayList_build.cmake	ff30ffc6c08cf7ab
+57	262	7420323391087923	F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/appPlayList_build.cmake	ff30ffc6c08cf7ab
+270	329	7420323391789277	.qt/rcc/qrc_appPlayList_raw_qml_0.cpp	1813a76600bd94b2
+270	329	7420323391789277	F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp	1813a76600bd94b2
+263	528	7420323392861715	.rcc/qmlcache/appPlayList_main_qml.cpp	ff4739099e9562f8
+263	528	7420323392861715	F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_main_qml.cpp	ff4739099e9562f8
+533	890	7420323393885794	CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp.obj	699024e90e057323
+528	3395	7420323393840662	CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_main_qml.cpp.obj	dfe67c9af82c3a9f
+3395	3892	7420323422520498	appPlayList.exe	e80892e16e41e493
