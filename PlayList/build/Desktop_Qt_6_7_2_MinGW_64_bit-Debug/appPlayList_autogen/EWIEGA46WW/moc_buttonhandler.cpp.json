@@ -1,0 +1,103 @@
+{
+    "classes": [
+        {
+            "className": "ButtonHandler",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "recLeftState",
+                    "notify": "recLeftStateChanged",
+                    "read": "recLeftState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setRecLeftState"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "recRightState",
+                    "notify": "recRightStateChanged",
+                    "read": "recRightState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setRecRightState"
+                }
+            ],
+            "qualifiedClassName": "ButtonHandler",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "playlistShuffled",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "prevButton",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "nextButton",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "playListButton",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "recLeftStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "recRightStateChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "name": "shuffleButton",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "prev",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "next",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "togglePlayList",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "buttonhandler.h",
+    "outputRevision": 68
+}

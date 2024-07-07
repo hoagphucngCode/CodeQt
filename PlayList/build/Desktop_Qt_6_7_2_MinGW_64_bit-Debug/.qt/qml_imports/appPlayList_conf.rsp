@@ -1,0 +1,14 @@
+-rootPath
+F:/Work-FPT/CodeQt/Project/PlayList
+-cmake-output
+-output-file
+F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/appPlayList_conf.cmake
+-importPath
+F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList
+-importPath
+F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.7.2/mingw_64/./qml
+-qrcFiles
+F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_PlayList.qrc
+F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appPlayList_raw_qml_0.qrc

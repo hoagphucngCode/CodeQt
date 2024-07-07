@@ -1,0 +1,4 @@
+module PlayList
+typeinfo appPlayList.qmltypes
+prefer :/PlayList/
+
