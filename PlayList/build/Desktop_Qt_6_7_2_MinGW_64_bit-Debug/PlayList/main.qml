@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import "icon"
 import "bkg"
+import "ShuffleList.js" as Shufflelist
 
 Window {
     width: 1080
@@ -215,10 +216,8 @@ Window {
                 x: 30
                 y: 20
 
-                MouseArea {
-                    onClicked: {
-                        btnHandler.togglePlayList();
-                    }
+                onClicked: {
+                    btnHandler.togglePlayList();
                 }
 
                 background: Rectangle {
@@ -343,20 +342,10 @@ Window {
         ListElement { title: "Song 29" }
     }
 
-    function shuffleArray(array) {
-        console.log("Shuffling array")
-        for (let i = array.count - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            const tempTitle = array.get(i).title;
-            array.set(i, { title: array.get(j).title });
-            array.set(j, { title: tempTitle })
-        }
-    }
-
     Connections {
         target: btnHandler
         function onPlaylistShuffled() {
-            shuffleArray(playListModel)
+            Shufflelist.shuffleArray(playListModel)
         }
     }
 

@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 31)
+set(qml_import_scanner_imports_count 33)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;C:/Qt/6.7.2/mingw_64/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlMetaPlugin;LINKTARGET;Qt6::QmlMeta;NAME;QtQml;PATH;C:/Qt/6.7.2/mingw_64/qml/QtQml;PLUGIN;qmlmetaplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml.Base;PATH;C:/Qt/6.7.2/mingw_64/qml/QtQml/Base;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/Base/;RELATIVEPATH;QtQml/Base;TYPE;module;")
@@ -28,6 +28,8 @@ set(qml_import_scanner_import_25 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin
 set(qml_import_scanner_import_26 "CLASSNAME;QtQuickLayoutsPlugin;LINKTARGET;Qt6::qquicklayoutsplugin;NAME;QtQuick.Layouts;PATH;C:/Qt/6.7.2/mingw_64/qml/QtQuick/Layouts;PLUGIN;qquicklayoutsplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Layouts/;RELATIVEPATH;QtQuick/Layouts;TYPE;module;")
 set(qml_import_scanner_import_27 "NAME;icon;PATH;F:/Work-FPT/CodeQt/Project/PlayList/main.qml/icon;TYPE;directory;")
 set(qml_import_scanner_import_28 "NAME;bkg;PATH;F:/Work-FPT/CodeQt/Project/PlayList/main.qml/bkg;TYPE;directory;")
-set(qml_import_scanner_import_29 "NAME;icon;PATH;F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml/icon;TYPE;directory;")
-set(qml_import_scanner_import_30 "NAME;bkg;PATH;F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml/bkg;TYPE;directory;")
+set(qml_import_scanner_import_29 "NAME;ShuffleList.js;PATH;F:/Work-FPT/CodeQt/Project/PlayList/main.qml/ShuffleList.js;TYPE;javascript;")
+set(qml_import_scanner_import_30 "NAME;icon;PATH;F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml/icon;TYPE;directory;")
+set(qml_import_scanner_import_31 "NAME;bkg;PATH;F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml/bkg;TYPE;directory;")
+set(qml_import_scanner_import_32 "NAME;ShuffleList.js;PATH;F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml/ShuffleList.js;TYPE;javascript;")
 

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-04ba7ea7988b9dab6473.json",
+					"jsonFile" : "directory-.-Debug-5fadfa241ec455abbbd0.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -92,7 +92,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appPlayList::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appPlayList-Debug-c8c5dd57d10f0734ad45.json",
+					"jsonFile" : "target-appPlayList-Debug-07a308703cdc1fcca76d.json",
 					"name" : "appPlayList",
 					"projectIndex" : 0
 				},

@@ -1,4 +1,5 @@
 module PlayList
 typeinfo appPlayList.qmltypes
 prefer :/PlayList/
+ShuffleList 1.0 ShuffleList.js
 

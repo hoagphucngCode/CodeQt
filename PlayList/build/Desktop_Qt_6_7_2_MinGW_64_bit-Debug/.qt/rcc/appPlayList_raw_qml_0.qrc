@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/PlayList/">
     <file alias="main.qml">F:/Work-FPT/CodeQt/Project/PlayList/main.qml</file>
+    <file alias="ShuffleList.js">F:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js</file>
     <file alias="icon/PlayList.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/PlayList.png</file>
     <file alias="bkg/bkg_test.png">F:/Work-FPT/CodeQt/Project/PlayList/bkg/bkg_test.png</file>
     <file alias="icon/shuffle-arrows.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png</file>

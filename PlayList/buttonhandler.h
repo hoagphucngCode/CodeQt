@@ -2,6 +2,8 @@
 #define BUTTONHANDLER_H
 
 #include <QObject>
+#include <QList>
+#include <QVariant>
 
 class ButtonHandler : public QObject
 {

@@ -3,6 +3,7 @@
 ButtonHandler::ButtonHandler(QObject *parent) : QObject(parent),
     m_recLeftState("expanded"), m_recRightState("collapsed")
 {
+    std::srand(std::time(nullptr));
 }
 
 QString ButtonHandler::recLeftState() const

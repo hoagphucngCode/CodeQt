@@ -47,7 +47,7 @@ cmake_ninja_workdir = F$:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_
 #############################################
 # Order-only phony target for appPlayList
 
-build cmake_object_order_depends_target_appPlayList: phony || .qt/rcc/qrc_appPlayList_raw_qml_0.cpp .qt/rcc/qrc_qmake_PlayList.cpp .rcc/qmlcache/appPlayList_main_qml.cpp .rcc/qmlcache/appPlayList_qmlcache_loader.cpp PlayList/appPlayList.qmltypes appPlayList_autogen appPlayList_autogen/mocs_compilation.cpp appPlayList_autogen/timestamp appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling appplaylist_qmltyperegistrations.cpp meta_types/appPlayList_json_file_list.txt meta_types/appPlayList_json_file_list.txt.timestamp meta_types/qt6appplaylist_debug_metatypes.json meta_types/qt6appplaylist_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appPlayList: phony || .qt/rcc/qrc_appPlayList_raw_qml_0.cpp .qt/rcc/qrc_qmake_PlayList.cpp .rcc/qmlcache/appPlayList_ShuffleList_js.cpp .rcc/qmlcache/appPlayList_main_qml.cpp .rcc/qmlcache/appPlayList_qmlcache_loader.cpp PlayList/appPlayList.qmltypes appPlayList_autogen appPlayList_autogen/mocs_compilation.cpp appPlayList_autogen/timestamp appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling appplaylist_qmltyperegistrations.cpp meta_types/appPlayList_json_file_list.txt meta_types/appPlayList_json_file_list.txt.timestamp meta_types/qt6appplaylist_debug_metatypes.json meta_types/qt6appplaylist_debug_metatypes.json.gen
 
 build CMakeFiles/appPlayList.dir/appPlayList_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appPlayList_unscanned_Debug F$:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appPlayList_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appPlayList
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -105,6 +105,14 @@ build CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/
   OBJECT_DIR = CMakeFiles\appPlayList.dir
   OBJECT_FILE_DIR = CMakeFiles\appPlayList.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache
 
+build CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_ShuffleList_js.cpp.obj: CXX_COMPILER__appPlayList_unscanned_Debug F$:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_ShuffleList_js.cpp || cmake_object_order_depends_target_appPlayList
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appPlayList.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache\appPlayList_ShuffleList_js.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IF:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/appPlayList_autogen/include -IF:/Work-FPT/CodeQt/Project/PlayList -isystem C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml -isystem C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2/QtCore -isystem C:/Qt/6.7.2/mingw_64/include/QtCore -isystem C:/Qt/6.7.2/mingw_64/include -isystem C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2 -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2/QtQmlBuiltins -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins -isystem C:/Qt/6.7.2/mingw_64/include/QtQml -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.7.2/mingw_64/include/QtNetwork -isystem C:/Qt/6.7.2/mingw_64/include/QtQuick -isystem C:/Qt/6.7.2/mingw_64/include/QtGui -isystem C:/Qt/6.7.2/mingw_64/include/QtQmlModels -isystem C:/Qt/6.7.2/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appPlayList.dir
+  OBJECT_FILE_DIR = CMakeFiles\appPlayList.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.rcc\qmlcache
+
 build CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp.obj: CXX_COMPILER__appPlayList_unscanned_Debug F$:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp || cmake_object_order_depends_target_appPlayList
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appPlayList.dir\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\rcc\qrc_appPlayList_raw_qml_0.cpp.obj.d
@@ -121,7 +129,7 @@ build CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/r
 #############################################
 # Link the executable appPlayList.exe
 
-build appPlayList.exe: CXX_EXECUTABLE_LINKER__appPlayList_Debug CMakeFiles/appPlayList.dir/appPlayList_autogen/mocs_compilation.cpp.obj CMakeFiles/appPlayList.dir/main.cpp.obj CMakeFiles/appPlayList.dir/appplaylist_qmltyperegistrations.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PlayList.cpp.obj CMakeFiles/appPlayList.dir/buttonhandler.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_qmlcache_loader.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_main_qml.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
+build appPlayList.exe: CXX_EXECUTABLE_LINKER__appPlayList_Debug CMakeFiles/appPlayList.dir/appPlayList_autogen/mocs_compilation.cpp.obj CMakeFiles/appPlayList.dir/main.cpp.obj CMakeFiles/appPlayList.dir/appplaylist_qmltyperegistrations.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_PlayList.cpp.obj CMakeFiles/appPlayList.dir/buttonhandler.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_qmlcache_loader.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_main_qml.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_ShuffleList_js.cpp.obj CMakeFiles/appPlayList.dir/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.2/mingw_64/lib/libQt6Quick.a  C:/Qt/6.7.2/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Qml.a  C:/Qt/6.7.2/mingw_64/lib/libQt6QmlBuiltins.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.7.2/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -184,7 +192,7 @@ build all_qmllint_module: phony appPlayList_qmllint_module
 #############################################
 # Utility command for appPlayList_tooling
 
-build appPlayList_tooling: phony PlayList/main.qml PlayList/icon/PlayList.png PlayList/bkg/bkg_test.png PlayList/icon/shuffle-arrows.png PlayList/icon/next.png PlayList/icon/previous.png
+build appPlayList_tooling: phony PlayList/main.qml PlayList/ShuffleList.js PlayList/icon/PlayList.png PlayList/bkg/bkg_test.png PlayList/icon/shuffle-arrows.png PlayList/icon/next.png PlayList/icon/previous.png
 
 
 #############################################
@@ -316,9 +324,18 @@ build .rcc/qmlcache/appPlayList_main_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcac
 
 
 #############################################
+# Custom command for .rcc\qmlcache\appPlayList_ShuffleList_js.cpp
+
+build .rcc/qmlcache/appPlayList_ShuffleList_js.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appPlayList_ShuffleList_js.cpp: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlcachegen.exe F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js .qt/rcc/qmake_PlayList.qrc .qt/rcc/appPlayList_raw_qml_0.qrc PlayList/appPlayList.qmltypes PlayList/qmldir || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug && C:\msys64\mingw64\bin\cmake.exe -E make_directory F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache && F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /PlayList/ShuffleList.js -I F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug -I C:/Qt/6.7.2/mingw_64/./qml -i F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/qmldir --resource F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qmake_PlayList.qrc --resource F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appPlayList_raw_qml_0.qrc -o F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmlcache/appPlayList_ShuffleList_js.cpp F:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js"
+  DESC = Generating .rcc/qmlcache/appPlayList_ShuffleList_js.cpp
+  restat = 1
+
+
+#############################################
 # Custom command for .qt\rcc\qrc_appPlayList_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appPlayList_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appPlayList_raw_qml_0.cpp: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/icon/PlayList.png F$:/Work-FPT/CodeQt/Project/PlayList/bkg/bkg_test.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/next.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png .qt/rcc/appPlayList_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
+build .qt/rcc/qrc_appPlayList_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appPlayList_raw_qml_0.cpp: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js F$:/Work-FPT/CodeQt/Project/PlayList/icon/PlayList.png F$:/Work-FPT/CodeQt/Project/PlayList/bkg/bkg_test.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/next.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png .qt/rcc/appPlayList_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug && C:\Qt\6.7.2\mingw_64\.\bin\rcc.exe --output F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp --name appPlayList_raw_qml_0 F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appPlayList_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appPlayList_raw_qml_0
   restat = 1
@@ -353,21 +370,21 @@ build CMakeFiles/appPlayList_qmltyperegistration | ${cmake_ninja_workdir}CMakeFi
 #############################################
 # Custom command for CMakeFiles\appPlayList_qmllint
 
-build CMakeFiles/appPlayList_qmllint | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml .rcc/qmllint/appPlayList.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
+build CMakeFiles/appPlayList_qmllint | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js .rcc/qmllint/appPlayList.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appPlayList.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appPlayList_qmllint_json
 
-build CMakeFiles/appPlayList_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml .rcc/qmllint/appPlayList_json.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
+build CMakeFiles/appPlayList_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js .rcc/qmllint/appPlayList_json.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appPlayList_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appPlayList_qmllint_module
 
-build CMakeFiles/appPlayList_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml .rcc/qmllint/appPlayList_module.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
+build CMakeFiles/appPlayList_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appPlayList_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmllint.exe F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js .rcc/qmllint/appPlayList_module.rsp || all_qmltyperegistrations appPlayList_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/bin/qmllint.exe @F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.rcc/qmllint/appPlayList_module.rsp"
 
 
@@ -377,6 +394,15 @@ build CMakeFiles/appPlayList_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/a
 build PlayList/main.qml | ${cmake_ninja_workdir}PlayList/main.qml: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/main.qml
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && C:\msys64\mingw64\bin\cmake.exe -E copy F:/Work-FPT/CodeQt/Project/PlayList/main.qml F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml"
   DESC = Copying main.qml to F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/main.qml
+  restat = 1
+
+
+#############################################
+# Custom command for PlayList\ShuffleList.js
+
+build PlayList/ShuffleList.js | ${cmake_ninja_workdir}PlayList/ShuffleList.js: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && C:\msys64\mingw64\bin\cmake.exe -E copy F:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/ShuffleList.js"
+  DESC = Copying ShuffleList.js to F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/ShuffleList.js
   restat = 1
 
 
@@ -434,7 +460,7 @@ build CMakeFiles/appPlayList_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/ap
 #############################################
 # Custom command for .qt\qml_imports\appPlayList_build.cmake
 
-build .qt/qml_imports/appPlayList_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appPlayList_build.cmake: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_PlayList.qrc .qt/rcc/appPlayList_raw_qml_0.qrc F$:/Work-FPT/CodeQt/Project/PlayList/main.qml
+build .qt/qml_imports/appPlayList_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appPlayList_build.cmake: CUSTOM_COMMAND C$:/Qt/6.7.2/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_PlayList.qrc .qt/rcc/appPlayList_raw_qml_0.qrc F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.2/mingw_64/./bin/qmlimportscanner.exe @F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/qml_imports/appPlayList_build.rsp"
   DESC = Running qmlimportscanner for appPlayList
   restat = 1
