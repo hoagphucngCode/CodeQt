@@ -60,6 +60,17 @@
                     },
                     {
                         "access": "public",
+                        "arguments": [
+                            {
+                                "name": "item",
+                                "type": "QVariantMap"
+                            }
+                        ],
+                        "name": "addPlaylistItem",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
                         "name": "recLeftStateChanged",
                         "returnType": "void"
                     },
@@ -88,6 +99,11 @@
                     {
                         "access": "public",
                         "name": "togglePlayList",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "addPlaylist",
                         "returnType": "void"
                     }
                 ],

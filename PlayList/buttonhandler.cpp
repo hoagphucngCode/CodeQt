@@ -1,4 +1,11 @@
 #include "buttonhandler.h"
+#include <cstdlib>
+#include <ctime>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include <QDebug>
+#include <QDir>
+#include <QFileInfo>
 
 ButtonHandler::ButtonHandler(QObject *parent) : QObject(parent),
     m_recLeftState("expanded"), m_recRightState("collapsed")
@@ -60,4 +67,37 @@ void ButtonHandler::togglePlayList()
         setRecRightState("collapsed");
     }
     emit playListButton();
+}
+
+void ButtonHandler::addPlaylist()
+{
+    QVariantMap newItem;
+    newItem["title"] = "New Song";
+    emit addPlaylistItem(newItem);
+}
+
+void ButtonHandler::scanMusicFolder(const QString &folderPath)
+{
+    QStringList filePaths;
+    QDir directory(folderPath);
+
+    QStringList filters;
+    filters << "*.mp3" << "*.wav" << "*.flac";
+
+    QFileInfoList fileList = directory.entryInfoList(filters, QDir::Files);
+
+    for (const QFileInfo &fileInfo : fileList) {
+        addToPlaylist(fileInfo.filePath());
+        filePaths.append(fileInfo.filePath());
+    }
+
+    emit musicFolderScanned(filePaths);
+}
+
+void ButtonHandler::addToPlaylist(const QString &filePath)
+{
+    QVariantMap newItem;
+    newItem["title"] = QFileInfo(filePath).baseName();
+
+    emit addPlaylistItem(newItem);
 }

@@ -192,7 +192,7 @@ build all_qmllint_module: phony appPlayList_qmllint_module
 #############################################
 # Utility command for appPlayList_tooling
 
-build appPlayList_tooling: phony PlayList/main.qml PlayList/ShuffleList.js PlayList/icon/PlayList.png PlayList/bkg/bkg_test.png PlayList/icon/shuffle-arrows.png PlayList/icon/next.png PlayList/icon/previous.png
+build appPlayList_tooling: phony PlayList/main.qml PlayList/ShuffleList.js PlayList/icon/PlayList.png PlayList/bkg/bkg_test.png PlayList/icon/shuffle-arrows.png PlayList/icon/next.png PlayList/icon/previous.png PlayList/icon/Adding.png
 
 
 #############################################
@@ -335,7 +335,7 @@ build .rcc/qmlcache/appPlayList_ShuffleList_js.cpp | ${cmake_ninja_workdir}.rcc/
 #############################################
 # Custom command for .qt\rcc\qrc_appPlayList_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appPlayList_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appPlayList_raw_qml_0.cpp: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js F$:/Work-FPT/CodeQt/Project/PlayList/icon/PlayList.png F$:/Work-FPT/CodeQt/Project/PlayList/bkg/bkg_test.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/next.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png .qt/rcc/appPlayList_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
+build .qt/rcc/qrc_appPlayList_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appPlayList_raw_qml_0.cpp: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/main.qml F$:/Work-FPT/CodeQt/Project/PlayList/ShuffleList.js F$:/Work-FPT/CodeQt/Project/PlayList/icon/PlayList.png F$:/Work-FPT/CodeQt/Project/PlayList/bkg/bkg_test.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/next.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png F$:/Work-FPT/CodeQt/Project/PlayList/icon/Adding.png .qt/rcc/appPlayList_raw_qml_0.qrc C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || appPlayList_autogen appPlayList_autogen_timestamp_deps appPlayList_qmlimportscan appPlayList_tooling
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList\build\Desktop_Qt_6_7_2_MinGW_64_bit-Debug && C:\Qt\6.7.2\mingw_64\.\bin\rcc.exe --output F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/qrc_appPlayList_raw_qml_0.cpp --name appPlayList_raw_qml_0 F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qt/rcc/appPlayList_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appPlayList_raw_qml_0
   restat = 1
@@ -448,6 +448,15 @@ build PlayList/icon/next.png | ${cmake_ninja_workdir}PlayList/icon/next.png: CUS
 build PlayList/icon/previous.png | ${cmake_ninja_workdir}PlayList/icon/previous.png: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && C:\msys64\mingw64\bin\cmake.exe -E copy F:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/icon/previous.png"
   DESC = Copying icon/previous.png to F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/icon/previous.png
+  restat = 1
+
+
+#############################################
+# Custom command for PlayList\icon\Adding.png
+
+build PlayList/icon/Adding.png | ${cmake_ninja_workdir}PlayList/icon/Adding.png: CUSTOM_COMMAND F$:/Work-FPT/CodeQt/Project/PlayList/icon/Adding.png
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\Work-FPT\CodeQt\Project\PlayList && C:\msys64\mingw64\bin\cmake.exe -E copy F:/Work-FPT/CodeQt/Project/PlayList/icon/Adding.png F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/icon/Adding.png"
+  DESC = Copying icon/Adding.png to F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/PlayList/icon/Adding.png
   restat = 1
 
 

@@ -1,5 +1,7 @@
 import QtQuick
 import QtQuick.Controls
+import Qt.labs.folderlistmodel
+
 import "icon"
 import "bkg"
 import "ShuffleList.js" as Shufflelist
@@ -306,40 +308,32 @@ Window {
                     }
                 }
             }
+
+            Button {
+                id: btnAdd
+                width: 40
+                height: 40
+
+                Image {
+                    id: iconAdding
+                    source: "icon/Adding.png"
+                    anchors.centerIn: parent
+                    width: btnAdd.width
+                    height: btnAdd.height
+                    opacity: 1.0
+                }
+
+                anchors.centerIn: parent
+                visible: playListModel.count === 0
+                onClicked: {
+                }
+            }
         }
     }
 
     ListModel {
         id: playListModel
-        ListElement { title: "Song 1" }
-        ListElement { title: "Song 2" }
-        ListElement { title: "Song 3" }
-        ListElement { title: "Song 4" }
-        ListElement { title: "Song 5" }
-        ListElement { title: "Song 6" }
-        ListElement { title: "Song 7" }
-        ListElement { title: "Song 8" }
-        ListElement { title: "Song 9" }
-        ListElement { title: "Song 10" }
-        ListElement { title: "Song 11" }
-        ListElement { title: "Song 12" }
-        ListElement { title: "Song 13" }
-        ListElement { title: "Song 14" }
-        ListElement { title: "Song 15" }
-        ListElement { title: "Song 16" }
-        ListElement { title: "Song 17" }
-        ListElement { title: "Song 18" }
-        ListElement { title: "Song 19" }
-        ListElement { title: "Song 20" }
-        ListElement { title: "Song 21" }
-        ListElement { title: "Song 22" }
-        ListElement { title: "Song 23" }
-        ListElement { title: "Song 24" }
-        ListElement { title: "Song 25" }
-        ListElement { title: "Song 26" }
-        ListElement { title: "Song 27" }
-        ListElement { title: "Song 28" }
-        ListElement { title: "Song 29" }
+        ListElement {title: "Song 1"}
     }
 
     Connections {

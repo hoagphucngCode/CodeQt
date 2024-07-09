@@ -7,6 +7,7 @@
     <file alias="icon/shuffle-arrows.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/shuffle-arrows.png</file>
     <file alias="icon/next.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/next.png</file>
     <file alias="icon/previous.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png</file>
+    <file alias="icon/Adding.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/Adding.png</file>
   </qresource>
 </RCC>
 

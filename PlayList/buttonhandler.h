@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QList>
 #include <QVariant>
+#include <QDir>
+#include <QFileInfoList>
 
 class ButtonHandler : public QObject
 {
@@ -22,15 +24,23 @@ public:
 
 public slots:
     void shuffleButton();
+
     void prev();
     void next();
+
     void togglePlayList();
+    void addPlaylist();
+    void scanMusicFolder(const QString &folderPath);
 
 signals:
     void playlistShuffled();
+
     void prevButton();
     void nextButton();
+
     void playListButton();
+    void addPlaylistItem(const QVariantMap &item);
+    void musicFolderScanned(const QStringList &filePaths);
 
     void recLeftStateChanged();
     void recRightStateChanged();
@@ -38,6 +48,8 @@ signals:
 private:
     QString m_recLeftState;
     QString m_recRightState;
+
+    void addToPlaylist(const QString &filePath);
 };
 
 #endif // BUTTONHANDLER_H

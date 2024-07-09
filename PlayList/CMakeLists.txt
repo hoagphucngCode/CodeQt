@@ -21,6 +21,7 @@ qt_add_qml_module(appPlayList
     RESOURCES icon/next.png icon/previous.png
     SOURCES buttonhandler.h buttonhandler.cpp
     QML_FILES ShuffleList.js
+    RESOURCES icon/Adding.png
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
