@@ -41,15 +41,16 @@ constexpr auto qt_meta_stringdata_CLASSButtonHandlerENDCLASS = QtMocHelpers::str
     "prevButton",
     "nextButton",
     "playListButton",
-    "addPlaylistItem",
-    "item",
+    "updatePlaylist",
+    "playlist",
     "recLeftStateChanged",
     "recRightStateChanged",
     "shuffleButton",
     "prev",
     "next",
     "togglePlayList",
-    "addPlaylist",
+    "setMusicFolder",
+    "folder",
     "recLeftState",
     "recRightState"
 );
@@ -65,7 +66,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSButtonHandlerENDCLASS[] = {
        0,       // classname
        0,    0, // classinfo
       12,   14, // methods
-       2,  100, // properties
+       2,  102, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -85,14 +86,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSButtonHandlerENDCLASS[] = {
       11,    0,   96,    2, 0x0a,   12 /* Public */,
       12,    0,   97,    2, 0x0a,   13 /* Public */,
       13,    0,   98,    2, 0x0a,   14 /* Public */,
-      14,    0,   99,    2, 0x0a,   15 /* Public */,
+
+ // methods: name, argc, parameters, tag, flags, initial metatype offsets
+      14,    1,   99,    2, 0x02,   15 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QVariantMap,    7,
+    QMetaType::Void, QMetaType::QVariantList,    7,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -101,11 +104,13 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSButtonHandlerENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+
+ // methods: parameters
+    QMetaType::Void, QMetaType::QString,   15,
 
  // properties: name, type, flags
-      15, QMetaType::QString, 0x00015103, uint(5), 0,
-      16, QMetaType::QString, 0x00015103, uint(6), 0,
+      16, QMetaType::QString, 0x00015103, uint(5), 0,
+      17, QMetaType::QString, 0x00015103, uint(6), 0,
 
        0        // eod
 };
@@ -131,9 +136,9 @@ Q_CONSTINIT const QMetaObject ButtonHandler::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'playListButton'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'addPlaylistItem'
+        // method 'updatePlaylist'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QVariantMap &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QVariantList &, std::false_type>,
         // method 'recLeftStateChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'recRightStateChanged'
@@ -146,8 +151,9 @@ Q_CONSTINIT const QMetaObject ButtonHandler::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'togglePlayList'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'addPlaylist'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        // method 'setMusicFolder'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
@@ -162,14 +168,14 @@ void ButtonHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 1: _t->prevButton(); break;
         case 2: _t->nextButton(); break;
         case 3: _t->playListButton(); break;
-        case 4: _t->addPlaylistItem((*reinterpret_cast< std::add_pointer_t<QVariantMap>>(_a[1]))); break;
+        case 4: _t->updatePlaylist((*reinterpret_cast< std::add_pointer_t<QVariantList>>(_a[1]))); break;
         case 5: _t->recLeftStateChanged(); break;
         case 6: _t->recRightStateChanged(); break;
         case 7: _t->shuffleButton(); break;
         case 8: _t->prev(); break;
         case 9: _t->next(); break;
         case 10: _t->togglePlayList(); break;
-        case 11: _t->addPlaylist(); break;
+        case 11: _t->setMusicFolder((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -203,8 +209,8 @@ void ButtonHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             }
         }
         {
-            using _t = void (ButtonHandler::*)(const QVariantMap & );
-            if (_t _q_method = &ButtonHandler::addPlaylistItem; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (ButtonHandler::*)(const QVariantList & );
+            if (_t _q_method = &ButtonHandler::updatePlaylist; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 4;
                 return;
             }
@@ -306,7 +312,7 @@ void ButtonHandler::playListButton()
 }
 
 // SIGNAL 4
-void ButtonHandler::addPlaylistItem(const QVariantMap & _t1)
+void ButtonHandler::updatePlaylist(const QVariantList & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);

@@ -69,35 +69,23 @@ void ButtonHandler::togglePlayList()
     emit playListButton();
 }
 
-void ButtonHandler::addPlaylist()
+void ButtonHandler::setMusicFolder(const QString &folder)
 {
-    QVariantMap newItem;
-    newItem["title"] = "New Song";
-    emit addPlaylistItem(newItem);
-}
+    QDir musicDir(folder);
+    QList<QVariant> playlist;
 
-void ButtonHandler::scanMusicFolder(const QString &folderPath)
-{
-    QStringList filePaths;
-    QDir directory(folderPath);
+    if (musicDir.exists()) {
+        QStringList filters;
+        filters << "*.mp3" << "*.wav" << "*.ogg";
+        QFileInfoList fileInfoList = musicDir.entryInfoList(filters, QDir::Files);
 
-    QStringList filters;
-    filters << "*.mp3" << "*.wav" << "*.flac";
-
-    QFileInfoList fileList = directory.entryInfoList(filters, QDir::Files);
-
-    for (const QFileInfo &fileInfo : fileList) {
-        addToPlaylist(fileInfo.filePath());
-        filePaths.append(fileInfo.filePath());
+        for (const QFileInfo &fileInfo : fileInfoList) {
+            QVariantMap song;
+            song["title"] = fileInfo.fileName();
+            song["path"] = QUrl::fromLocalFile(fileInfo.absoluteFilePath()).toString();
+            playlist.append(song);
+        }
     }
 
-    emit musicFolderScanned(filePaths);
-}
-
-void ButtonHandler::addToPlaylist(const QString &filePath)
-{
-    QVariantMap newItem;
-    newItem["title"] = QFileInfo(filePath).baseName();
-
-    emit addPlaylistItem(newItem);
+    emit updatePlaylist(playlist);
 }

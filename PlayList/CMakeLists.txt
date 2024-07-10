@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
+find_package(Qt6 REQUIRED COMPONENTS Multimedia)
+
 qt_add_executable(appPlayList
     main.cpp
 )
@@ -22,6 +24,9 @@ qt_add_qml_module(appPlayList
     SOURCES buttonhandler.h buttonhandler.cpp
     QML_FILES ShuffleList.js
     RESOURCES icon/Adding.png
+    RESOURCES icon/Loop.svg icon/LoopOne.svg
+    RESOURCES icon/Loop.png
+    RESOURCES icon/LoopOne.png
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -36,7 +41,7 @@ set_target_properties(appPlayList PROPERTIES
 )
 
 target_link_libraries(appPlayList
-    PRIVATE Qt6::Quick)
+    PRIVATE Qt6::Quick Qt6::Multimedia)
 
 include(GNUInstallDirs)
 install(TARGETS appPlayList

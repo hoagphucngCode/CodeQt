@@ -1,6 +1,5 @@
 import QtQuick
 import QtQuick.Controls
-import Qt.labs.folderlistmodel
 
 import "icon"
 import "bkg"
@@ -29,89 +28,11 @@ Window {
 
         Rectangle {
             id: recLeft
-            width: parent.width * 2/3 + 90
+            width: parent.width * 2/3
             height: parent.height
             color: "#201f3b"
             anchors.left: parent.left
             opacity: 0.7
-
-            Button {
-                id: btnShuffle
-                width: 40
-                height: 40
-                x: 30
-                y: 20
-
-                background: Rectangle {
-                    color: "#FFFFFF"
-                    opacity: 0.8
-                }
-
-                Image {
-                    id: iconShuffle
-                    source: "icon/shuffle-arrows.png"
-                    anchors.centerIn: parent
-                    width: btnShuffle.width
-                    height: btnShuffle.height
-                    opacity: 1.0
-                }
-
-                onClicked: {
-                    btnHandler.shuffleButton()
-                }
-            }
-
-            Button {
-                id: btnPrev
-                width: 40
-                height: 40
-                x: 90
-                y: 20
-
-                background: Rectangle {
-                    color: "#FFFFFF"
-                    opacity: 0.8
-                }
-
-                Image {
-                    id: iconPrev
-                    source: "icon/previous.png"
-                    anchors.centerIn: parent
-                    width: btnPrev.width
-                    height: btnPrev.height
-                    opacity: 1.0
-                }
-
-                onClicked: {
-                    btnHandler.prev()
-                }
-            }
-
-            Button {
-                id: btnNext
-                width: 40
-                height: 40
-                x: 180
-                y: 20
-
-                background: Rectangle {
-                    color: "#FFFFFF"
-                    opacity: 0.8
-                }
-
-                Image {
-                    id: iconNext
-                    source: "icon/next.png"
-                    anchors.centerIn: parent
-                    width: btnNext.width
-                    height: btnNext.height
-                    opacity: 1.0
-                }
-
-                onClicked: {
-                    btnHandler.next()
-                }
-            }
 
             states: [
                 State {
@@ -125,43 +46,51 @@ Window {
                     name: "collapsed"
                     PropertyChanges {
                         target: recLeft
-                        width: parent.width * 2/3 + 90
+                        width: parent.width
                     }
                 }
             ]
 
             transitions: [
                 Transition {
-                    from: "collapsed"
-                    to: "expanded"
                     reversible: true
-                    ParallelAnimation {
-                        NumberAnimation {
-                            properties: "width"
-                            duration: 300
-                            easing.type: Easing.InOutQuad
-                        }
+                    PropertyAnimation {
+                        properties: "width"
+                        duration: 750
+                        easing.type: Easing.OutExpo
                     }
                 }
             ]
-
-            Behavior on width {
-                NumberAnimation {
-                    duration: 300
-                    easing.type: Easing.InOutQuad
-                }
-            }
         }
 
         Rectangle {
             id: recRight
-            width: parent.width * 1/3 - 90
+            width: parent.width * 1/3
             height: parent.height
             color: "#000000"
             anchors.right: parent.right
             opacity: 0.7
 
             states: [
+                State {
+                    name: "expanded"
+                    PropertyChanges {
+                        target: recRight
+                        width: parent.width * 1/3
+                    }
+                    PropertyChanges {
+                        target: btnList
+                        x: 30
+                    }
+                    PropertyChanges {
+                        target: btnLoop
+                        x: 90
+                    }
+                    PropertyChanges {
+                        target: btnLoop
+                        y: 20
+                    }
+                },
                 State {
                     name: "collapsed"
                     PropertyChanges {
@@ -170,37 +99,37 @@ Window {
                     }
                     PropertyChanges {
                         target: btnList
-                        x: parent.width - btnList.width - 10
-                    }
-                },
-                State {
-                    name: "expanded"
-                    PropertyChanges {
-                        target: recRight
-                        width: parent.width * 1/3 - 90
+                        x: parent.width - btnList.width - 30
                     }
                     PropertyChanges {
-                        target: btnList
-                        x: 30
+                        target: btnLoop
+                        x: parent.width - btnLoop.width - 30
+                    }
+                    PropertyChanges {
+                        target: btnLoop
+                        y: btnList.y + btnList.height + 30
                     }
                 }
             ]
 
             transitions: [
                 Transition {
-                    from: "expanded"
-                    to: "collapsed"
                     reversible: true
                     ParallelAnimation {
                         NumberAnimation {
                             properties: "width"
-                            duration: 300
-                            easing.type: Easing.InOutQuad
+                            duration: 750
+                            easing.type: Easing.OutExpo
                         }
                         NumberAnimation {
                             properties: "x"
-                            duration: 300
-                            easing.type: Easing.InOutQuad
+                            duration: 750
+                            easing.type: Easing.OutExpo
+                        }
+                        NumberAnimation {
+                            properties: "y"
+                            duration: 750
+                            easing.type: Easing.OutExpo
                         }
                     }
                 }
@@ -219,7 +148,9 @@ Window {
                 y: 20
 
                 onClicked: {
-                    btnHandler.togglePlayList();
+                    recRight.state = recRight.state === "collapsed" ? "expanded" : "collapsed"
+
+                    recLeft.state = recLeft.state === "collapsed" ? "expanded" : "expanded"
                 }
 
                 background: Rectangle {
@@ -233,6 +164,41 @@ Window {
                     anchors.centerIn: parent
                     width: btnList.width
                     height: btnList.height
+                    opacity: 1.0
+                }
+            }
+
+            Button {
+                id: btnLoop
+                width: 40
+                height: 40
+                x: 90
+                y: 20
+
+                property bool isLooping: false
+
+                onClicked: {
+                    isLooping = !isLooping
+                    console.log("Loop button clicked, isLooping:", isLooping);
+
+                    if (isLooping) {
+                        iconLoop.source = "icon/LoopOne.png"
+                    } else {
+                        iconLoop.source = "icon/Loop.png"
+                    }
+                }
+
+                background: Rectangle {
+                    color: "transparent"
+                    opacity: 0.8
+                }
+
+                Image {
+                    id: iconLoop
+                    source: "icon/Loop.png"
+                    anchors.centerIn: parent
+                    width: btnLoop.width
+                    height: btnLoop.height
                     opacity: 1.0
                 }
             }
@@ -308,26 +274,6 @@ Window {
                     }
                 }
             }
-
-            Button {
-                id: btnAdd
-                width: 40
-                height: 40
-
-                Image {
-                    id: iconAdding
-                    source: "icon/Adding.png"
-                    anchors.centerIn: parent
-                    width: btnAdd.width
-                    height: btnAdd.height
-                    opacity: 1.0
-                }
-
-                anchors.centerIn: parent
-                visible: playListModel.count === 0
-                onClicked: {
-                }
-            }
         }
     }
 
@@ -341,29 +287,5 @@ Window {
         function onPlaylistShuffled() {
             Shufflelist.shuffleArray(playListModel)
         }
-    }
-
-    Connections {
-        target: btnHandler
-        function onRecLeftStateChanged() {
-            recLeft.state = btnHandler.recLeftState
-        }
-    }
-
-    Connections {
-        target: btnHandler
-        function onRecRightStateChanged() {
-            recRight.state = btnHandler.recRightState
-        }
-    }
-
-    Connections {
-        target: btnHandler
-        function onPrevButton() {}
-    }
-
-    Connections {
-        target: btnHandler
-        function onNextButton() {}
     }
 }

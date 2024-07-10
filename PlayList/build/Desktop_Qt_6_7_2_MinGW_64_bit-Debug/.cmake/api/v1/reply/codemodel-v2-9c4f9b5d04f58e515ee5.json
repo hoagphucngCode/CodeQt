@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-eb0d41ec80b96eb2a43c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PlayList",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-b0b74e3aae6c6c301887.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-ead6e9f8403c9f43f941.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-166fb5613e45e5e8f2df.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-153d2a98ef32b7731f98.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList-Debug-9dd26b7855828b4b2bfb.json",
+					"name" : "appPlayList",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_autogen-Debug-5a4bb24afda571c7eae9.json",
+					"name" : "appPlayList_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_autogen_timestamp_deps-Debug-af578fece611c40df94c.json",
+					"name" : "appPlayList_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_qmlimportscan-Debug-9e3bf3929cbfd65e0157.json",
+					"name" : "appPlayList_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_qmllint-Debug-aa4b1b360a5a13957ed0.json",
+					"name" : "appPlayList_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_qmllint_json-Debug-3734e515734754091343.json",
+					"name" : "appPlayList_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_qmllint_module-Debug-100b76f1579dbdc68ef6.json",
+					"name" : "appPlayList_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_qmltyperegistration-Debug-9acff44007b8804b49af.json",
+					"name" : "appPlayList_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appPlayList_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appPlayList_tooling-Debug-d5548ce94cb0fc154b06.json",
+					"name" : "appPlayList_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/Work-FPT/CodeQt/Project/PlayList/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "F:/Work-FPT/CodeQt/Project/PlayList"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

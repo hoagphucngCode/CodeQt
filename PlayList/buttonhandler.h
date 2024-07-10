@@ -22,6 +22,8 @@ public:
     QString recRightState() const;
     void setRecRightState(const QString &state);
 
+    Q_INVOKABLE void setMusicFolder(const QString &folder);
+
 public slots:
     void shuffleButton();
 
@@ -29,8 +31,6 @@ public slots:
     void next();
 
     void togglePlayList();
-    void addPlaylist();
-    void scanMusicFolder(const QString &folderPath);
 
 signals:
     void playlistShuffled();
@@ -39,8 +39,7 @@ signals:
     void nextButton();
 
     void playListButton();
-    void addPlaylistItem(const QVariantMap &item);
-    void musicFolderScanned(const QStringList &filePaths);
+    void updatePlaylist(const QVariantList &playlist);
 
     void recLeftStateChanged();
     void recRightStateChanged();
@@ -48,8 +47,6 @@ signals:
 private:
     QString m_recLeftState;
     QString m_recRightState;
-
-    void addToPlaylist(const QString &filePath);
 };
 
 #endif // BUTTONHANDLER_H

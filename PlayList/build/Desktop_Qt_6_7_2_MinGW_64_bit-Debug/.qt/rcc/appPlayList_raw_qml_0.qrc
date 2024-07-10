@@ -8,6 +8,10 @@
     <file alias="icon/next.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/next.png</file>
     <file alias="icon/previous.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/previous.png</file>
     <file alias="icon/Adding.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/Adding.png</file>
+    <file alias="icon/Loop.svg">F:/Work-FPT/CodeQt/Project/PlayList/icon/Loop.svg</file>
+    <file alias="icon/LoopOne.svg">F:/Work-FPT/CodeQt/Project/PlayList/icon/LoopOne.svg</file>
+    <file alias="icon/Loop.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/Loop.png</file>
+    <file alias="icon/LoopOne.png">F:/Work-FPT/CodeQt/Project/PlayList/icon/LoopOne.png</file>
   </qresource>
 </RCC>
 

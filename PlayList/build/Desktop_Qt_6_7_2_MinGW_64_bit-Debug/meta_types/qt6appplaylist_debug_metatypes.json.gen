@@ -3,6 +3,19 @@
         "classes": [
             {
                 "className": "ButtonHandler",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "folder",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setMusicFolder",
+                        "returnType": "void"
+                    }
+                ],
                 "object": true,
                 "properties": [
                     {
@@ -62,11 +75,11 @@
                         "access": "public",
                         "arguments": [
                             {
-                                "name": "item",
-                                "type": "QVariantMap"
+                                "name": "playlist",
+                                "type": "QVariantList"
                             }
                         ],
-                        "name": "addPlaylistItem",
+                        "name": "updatePlaylist",
                         "returnType": "void"
                     },
                     {
@@ -99,11 +112,6 @@
                     {
                         "access": "public",
                         "name": "togglePlayList",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "name": "addPlaylist",
                         "returnType": "void"
                     }
                 ],
